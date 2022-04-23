@@ -1,0 +1,27 @@
+.weather__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: .5rem;
+    gap: 12px;
+}
+
+.address {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+table {
+    width: 15rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.min {
+    color: rgb(247, 132, 132);
+}
+
+.max {
+    color: rgb(151, 250, 151);
+}
