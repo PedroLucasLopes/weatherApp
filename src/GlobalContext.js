@@ -15,6 +15,7 @@ export const GlobalCall = ({ children }) => {
         fetch(`${api.base}direct?q=${place === undefined ? 'Contagem' : place}&limit=1&appid=${api.key}`)
             .then(response => response.json())
             .then(json => setData(json))
+            .catch(error => console.log(error))
     }, [api.base, api.key])
 
     return <GlobalContext.Provider value={{ data }}>{children}</GlobalContext.Provider>
