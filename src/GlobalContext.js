@@ -4,7 +4,7 @@ export const GlobalContext = React.createContext();
 
 export const GlobalCall = ({ children }) => {
     const api = {
-        base: 'http://api.openweathermap.org/geo/1.0/',
+        base: 'https://api.openweathermap.org/geo/1.0/',
         key: '81fa2e3b6e5997b8560c508cb56160a1',
     }
     const [data, setData] = React.useState(null);
