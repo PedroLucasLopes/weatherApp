@@ -23,8 +23,8 @@ const SearchPlace = () => {
 
     return (
         <div className='search__box'>
-            <input type='text' name='location' id='location' placeholder='Pesquise sua cidade' autoComplete='off' onChange={handleChange} onKeyDown={handleKey} />
-            <button className='button' onClick={handleClick}>
+            <input type='text' name='location' id='location' value={input} placeholder='Pesquise sua cidade' autoComplete='off' onChange={handleChange} onKeyDown={handleKey} />
+            <button type='submit' className='button' onClick={handleClick}>
                 <img src={lupa} className='img__search' alt='lupa procurar' />
             </button>
         </div>
